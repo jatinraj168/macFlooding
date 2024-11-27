@@ -30,19 +30,17 @@ This script is for **educational and testing purposes only**. Unauthorized use o
 
 1. **Install Scapy**:
    ```bash
-   pip install scapy
+   pip3 install scapy
    ```
 Clone the Repository (or copy the script):
 
 ```bash
-Copy code
 git clone https://github.com/your-repo/macflooding.git
 cd macflooding
 ```
 Set Permissions: Ensure the script has execution permission:
 
 ```bash
-Copy code
 chmod +x macFlooding.py
 ```
 ## 🚀 Usage
@@ -50,7 +48,6 @@ chmod +x macFlooding.py
 Run the following command to list available network interfaces:
 
 ```bash
-Copy code
 ip link show
 ```
 Choose a valid interface (e.g., eth0, wlan0, tap0, etc.).
@@ -59,18 +56,15 @@ Choose a valid interface (e.g., eth0, wlan0, tap0, etc.).
 Execute the script with root privileges to send packets:
 
 ```bash
-Copy code
 sudo python3 macFlooding.py
 ```
 3. Customization
 Number of Packets: Adjust the num_packets variable in the script:
 ```bash
-Copy code
 num_packets = 5000
 ```
 Interface: Update the interface variable in the script:
 ```python
-Copy code
 interface = 'eth0'
 ```
 ## ⚙️ How It Works
@@ -82,7 +76,6 @@ Objective: Overwhelming the switch's CAM table forces it into a "flooding" state
 
 💡 Example Output
 ```csharp
-Copy code
 Generating 10000 packets...
 Sending packets on interface eth0...
 Packet sending completed.
